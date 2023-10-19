@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+/* Navigationsbar*/
+.nav {
+    background-color: #DADDC2;
+    width: 100%;
+    z-index: 1;
+}
+.tidløst{
+    margin-left: 42%;
+    width: 300px;
+    height: 100px;
+
+}
+
+.main-nav {
+    position: relative;
+    display: flex;
+    background-color: #DADDC2;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bolder;
+    color: black;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Opdel i lige store kolonner */
+    gap: 10px;
+   
+    
+  }
+ 
+  nav ul{
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+   
+
+  }
+  nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+  }
+  nav li a{
+    text-decoration: none;
+    color: black; 
+  }
+  
+
+  .main-nav a:hover {
+    background-color: #A3BD8C;
+    color: black;
+  }
+
+/* Navigationsbar slut*/
+
+
+
+
+/*Her starter Fotteren*/
+
+.footer {
+    padding: 40px;
+    background-color: #DADDC2;
+    display: flex;
+    margin-top: auto;
+
+}
+
+.footer, .social {
+    text-align: center;
+    padding: 25px;
+    color: #6d8c51;
+
+}
+
+/* Vi styler alle a under social i footeren */
+.footer .social a {
+    font-size: 24px;
+    /* når vi skriver inherit, bliver det samme farve som vi har brugt i parent altså social */
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    
+
+}
+/* Når du holder musen over sociale medie ikonerne bliver de en dybere grøn*/
+.footer .social a:hover {
+    opacity: 1;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* vi får teksten på samme linje, istedet for under hinanden */
+.footer ul li {
+   display: inline-block;
+   padding: 0 15px;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 1.5;
+}
+
+/* der er tilføjet hover (Mørkere farve) på min skrift */
+.footer ul li a:hover {
+    opacity: 1.5;
+
+}
+
+.footer, .copyright {
+   
+    text-align: left;
+    font-size: 13px;
+    color: black;
+    flex: 1;
+}
+/* Vi rykker fotteren ned på siden, det gør vi ved at ændre på positionen, 
+her duer både absolute og fixed når vi har bottom til 0 er der ingen px mellem bunden */
+
+/* absolut kan du ligge over elementer, den er altså mere fri */
+.footer, footer {
+    position: relative;  
+    width: 1384px;
+    bottom: 0;
+}
+.footer div{
+    text-align: center;
+}
+
+.col-1 a{
+    display:block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+
+
+form input{
+    width:250px;
+    height:20px;
+    border-radius:4px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 40px;
+    outline:none;
+    border:none;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+form button{
+    background:transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size:15px;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+form button:hover{
+    background-color: #6d8c51;
+}
